@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Employees from "./Employees";
-import Find from "./Find";
+// import Employees from "./Employees";
+// import Find from "./Find";
 import API from "../utils/API";
 
 class Directory extends Component {
@@ -12,18 +12,18 @@ class Directory extends Component {
     }
 }
 
-componentDidMount() {
+componentDidMount = () => {
     API.getRandomEmployees().then((res) => {
         this.setState({
-            employees: results.data.results,
+            employees: res.data.results,
         });
     });
 };
 
-render() {
+render = () => {
     return (
-        <div>
-            <Search name="search" startSort={this.startSort} label="Search" />
+        // <div>
+        //     <Search name="search" startSort={this.startSort} label="Search" />
         <div className="container-fluid">
              {/* https://react-bootstrap.github.io/components/table/ */}
              <table striped bordered hover>
@@ -38,7 +38,7 @@ render() {
                  </thread>
              </table>
          </div>
-        </div>
+        // </div>
     )
 }
 
