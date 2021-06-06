@@ -5,6 +5,10 @@ import axios from "axios";
 
 export default {
     getRandomEmployee: function() {
-        return axios.get("https://randomuser.me/api/?exc=login")
-    }
+         let user = axios.get("https://randomuser.me/api/?results=3");
+         console.log(user)
+         return user
+    },
 };
+
+ 
