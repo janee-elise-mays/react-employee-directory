@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+// import Directory from "./components/Directory";
 import Employees from "./components/Employees";
 
 function App() {
@@ -7,10 +8,9 @@ function App() {
         <div>
             <Header />
             <Employees />
+            {/* <Directory /> */}
         </div>
     );
 }
 
 export default App;
-
-// ReactDOM.render(<App />, document.getElementById("root"));

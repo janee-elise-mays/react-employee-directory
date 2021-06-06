@@ -5,9 +5,7 @@ import axios from "axios";
 
 export default {
     getRandomEmployee: function() {
-         let user = axios.get("https://randomuser.me/api/?results=3");
-         console.log(user)
-         return user
+         return axios.get("https://randomuser.me/api/?results=3");
     },
 };
 
