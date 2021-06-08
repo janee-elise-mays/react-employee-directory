@@ -26,4 +26,8 @@
     font-weight: 200;
   }
 
+  .container-fluid {
+    justify-content: center;
+  }
+
   

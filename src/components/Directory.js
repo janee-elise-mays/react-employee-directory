@@ -38,7 +38,6 @@ import Table from "react-bootstrap/Table";
                          <th>Phone</th>
                          <th>Date of Birth</th>
                      </tr>
-                 </thread>
                  <tbody>
                  {this.state.employees.map(employee => (
                      <Employees
@@ -47,11 +46,12 @@ import Table from "react-bootstrap/Table";
                      lastName={employee.name.last}
                      phone={employee.phone}
                      email={employee.email}
-                     icon={employee.picture.medium}
+                     picture={employee.picture.medium}
                      dob={employee.dob.date} 
                      />
                  ))}
                  </tbody>
+                 </thread>
              </Table>
          </div>
      </div>
