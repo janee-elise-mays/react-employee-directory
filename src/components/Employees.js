@@ -5,7 +5,7 @@ function Employees(props){
     return (
     <tr>
       <td>{props.name}</td>
-      <td>{props.img}</td>
+      <td>{props.picture}</td>
       <td>{props.phone}</td>
       <td>{props.email}</td>
       <td>{props.dob}</td>
