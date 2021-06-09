@@ -46,7 +46,7 @@ import Table from "react-bootstrap/Table";
                      lastName={employee.name.last}
                      phone={employee.phone}
                      email={employee.email}
-                     picture={employee.picture.medium}
+                     picture={employee.picture.large}
                      dob={employee.dob.date} 
                      />
                  ))}
