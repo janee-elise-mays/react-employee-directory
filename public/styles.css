@@ -6,9 +6,13 @@
   html {
     font-family: "Montserrat", sans-serif;
   }
-  body {
+  tbody {
     background: #eee;
     padding: 0 16px;
+  }
+
+  .table-bordered td {
+    width: 100%
   }
   
   header {

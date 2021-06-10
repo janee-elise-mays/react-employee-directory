@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Employees from "./Employees";
 import API from "../utils/API";
 import Table from "react-bootstrap/Table";
+import Headeer from "./Header";
 
  class Directory extends Component {
      state = {
@@ -21,14 +22,15 @@ import Table from "react-bootstrap/Table";
             this.setState({employees: res.data.results})})
     } 
 
+    
+
 
     render = () => {
     return (
      <div>
-        {/* <Find name="search" startSort={this.startSort} label="Search" /> */}
          <div className="container-fluid">
               {/* https://react-bootstrap.github.io/components/table/  */}
-             <Table striped bordered hover>
+             <Table striped bordered hover responsive>
                  <thread className="thread">
                      <tr>
                          <th>Image</th>

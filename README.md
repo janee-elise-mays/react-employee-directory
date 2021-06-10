@@ -11,14 +11,14 @@ An employee directory that will allow the user to be able to view the entire emp
 ![alt text](screen-shot.jpg)
 
 
-# Technology used
+# Technology
 
 * Node.js
 * HTML
 * CSS
 * JavaScript
-* Axios - Used to make an API call to https://randomuser.me/ to obtain example employees
-* Bootstrap - Used to structure the design of the site
+* Axios - Used to make an API
+* Bootstrap 
 * React
 * JSX
 * "gh-pages" NPM package - Used to deploy a React Application to github pages.
